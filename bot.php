@@ -119,7 +119,7 @@ function arti($keyword) {
 }
 #-------------------------[Open]-------------------------#
 function wib($keyword) {
-    $uri = "https://time.siswadi.com/timezone/?address=Jakarta";
+    $uri = "https://time.siswadi.com/timezone/?address=Tehran";
     $response = Unirest\Request::get("$uri");
     $json = json_decode($response->raw_body, true);
     $parsed = array(); 
@@ -128,7 +128,7 @@ function wib($keyword) {
     return $parsed;
 }
 function wit($keyword) {
-    $uri = "https://time.siswadi.com/timezone/?address=jayapura";
+    $uri = "https://time.siswadi.com/timezone/?address=Esfehan";
     $response = Unirest\Request::get("$uri");
     $json = json_decode($response->raw_body, true);
     $parsed = array(); 
@@ -137,7 +137,7 @@ function wit($keyword) {
     return $parsed;
 }
 function wita($keyword) {
-    $uri = "https://time.siswadi.com/timezone/?address=manado";
+    $uri = "https://time.siswadi.com/timezone/?address=Arak";
     $response = Unirest\Request::get("$uri");
     $json = json_decode($response->raw_body, true);
     $parsed = array(); 
@@ -281,7 +281,7 @@ function qibla($keyword) {
 }
 //show menu, saat join dan command,menu
 if ($command == 'Help') {
-    $text .= "「Keyword RpdBot~」\n\n";
+    $text .= "「Keyword ✿мosᴇɴ👿ʙoт✿~」\n\n";
     $text .= "- Help\n";
     $text .= "- /jam \n";
     $text .= "- /quotes \n";
@@ -313,7 +313,7 @@ if ($command == 'Help') {
     );
 }
 if ($type == 'join') {
-    $text = "Terimakasih Telah invite aku ke group ini silahkan ketik Help untuk lihat command aku :)";
+    $text = "از اینکه مرا به این گروه دعوت کردید متشکرم ، لطفاً help  را تایپ کنید تا دستور من را ببینید:)";
     $balas = array(
         'replyToken' => $replyToken,
         'messages' => array(
@@ -352,7 +352,7 @@ if ($command == '/jam') {
             'messages' => array( 
                 array ( 
                   'type' => 'template', 
-                  'altText' => 'Jam Indonesia', 
+                  'altText' => '✿мosᴇɴ👿ʙoт✿', 
                   'template' =>  
                   array ( 
                     'type' => 'carousel', 
@@ -360,7 +360,7 @@ if ($command == '/jam') {
                     array ( 
                       0 =>  
                       array ( 
-                        'thumbnailImageUrl' => 'https://preview.ibb.co/gXGfLU/20180913_194713.jpg', 
+                        'thumbnailImageUrl' => 'https://lh3.googleusercontent.com/-xHqQP4wTZDU/YBq5AgqjvCI/AAAAAAAAL6c/TmVGaX4tgIk07K5bZIPDtV9Ct49xEwaxwCK8BGAsYHg/s512/2021-02-03.gif', 
                         'imageBackgroundColor' => '#FFFFFF', 
                         'title' => 'WIB', 
                         'text' => 'Jam Indonesia WIB', 
@@ -382,7 +382,7 @@ if ($command == '/jam') {
                       ), 
                       1 =>  
                       array ( 
-                        'thumbnailImageUrl' => 'https://preview.ibb.co/nxaPfU/20180913_194725.jpg', 
+                        'thumbnailImageUrl' => 'https://lh3.googleusercontent.com/-n_hWqDwlKqo/YBq4-MviZII/AAAAAAAAL6Y/Y6cJvlsVBN4gWGk9Ehkx-kXpletwxwxGwCK8BGAsYHg/s500/2021-02-03.gif', 
                         'imageBackgroundColor' => '#000000', 
                         'title' => 'WIT', 
                         'text' => 'Jam Indonesia WIT', 
@@ -404,7 +404,7 @@ if ($command == '/jam') {
                       ), 
                       2 =>  
                       array ( 
-                        'thumbnailImageUrl' => 'https://preview.ibb.co/cPdc0U/20180913_194744.jpg', 
+                        'thumbnailImageUrl' => 'https://lh3.googleusercontent.com/-IVJ0bg14co4/YBq4zQOEN0I/AAAAAAAAL6Q/ojEHrB9Uju8Cj4nQ1FTHun-6XKHYZd_vACK8BGAsYHg/s340/2021-02-03.gif', 
                         'imageBackgroundColor' => '#000000', 
                         'title' => 'WITA', 
                         'text' => 'Jam Indonesia WITA', 
@@ -432,7 +432,7 @@ if ($command == '/jam') {
 }
 }
 if($message['type']=='text') {
-        if ($command == '/jadwaltv') {
+        if ($command == '/tv') {
         $result = tv($options);
         $balas = array(
             'replyToken' => $replyToken,
@@ -499,7 +499,7 @@ if($message['type']=='text') {
                           0 => 
                           array (
                             'type' => 'text',
-                            'text' => 'RpdBot',
+                            'text' => '✿мosᴇɴ👿ʙoт✿',
                             'size' => 'xs',
                             'color' => '#aaaaaa',
                             'flex' => 0,
@@ -600,7 +600,7 @@ if($message['type']=='text') {
             'messages' => array( 
                 array ( 
                         'type' => 'template', 
-                          'altText' => 'Kamu Ahli apa?', 
+                          'altText' => 'ᴹᴼˢᴱᴺ★ᴮᴼᵀ', 
                           'template' =>  
                           array ( 
                             'type' => 'buttons', 
@@ -616,7 +616,7 @@ if($message['type']=='text') {
                               array ( 
                                 'type' => 'message', 
                                 'label' => 'Done', 
-                                'text' => 'Terimakasih RpdBot', 
+                                'text' => 'Terimakasih ✿мosᴇɴ👿ʙoт✿', 
                               ), 
                             ), 
                           ), 
@@ -669,7 +669,7 @@ if($message['type']=='text') {
             'messages' => array( 
                 array ( 
                         'type' => 'template', 
-                          'altText' => 'About Creator RpdBot', 
+                          'altText' => 'About Creator ☆ܦܓܚܔ☆', 
                           'template' =>  
                           array ( 
                             'type' => 'buttons', 
@@ -678,14 +678,14 @@ if($message['type']=='text') {
                             'imageSize' => 'cover', 
                             'imageBackgroundColor' => '#FFFFFF', 
                             'title' => 'Muhammad Raihan Permadi', 
-                            'text' => 'Creator RpdBot', 
+                            'text' => 'Creator ☆ܦܓܚܔ☆', 
                             'actions' =>  
                             array ( 
                               0 =>  
                               array ( 
                                 'type' => 'uri', 
                                 'label' => 'Contact', 
-                                'uri' => 'https://line.me/ti/p/~rhnprmd', 
+                                'uri' => 'line://ti/p/~m_bw', 
                               ), 
                             ), 
                           ), 
